@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tabela sa predmetima</title>
+    <link rel="stylesheet" type="text/css" href="./css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Anton&family=Archivo:ital,wght@1,300&family=Bebas+Neue&family=Roboto+Slab:wght@300;400&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <section>
+      <header>
+        <h1>Tabela sa predmetima.</h1>
+      </header>
+      <table>
+        <thead>
+          <tr>
+            <th>Predmet</th>
+            <th>Br. bodova</th>
+            <th>Ocena</th>
+          </tr>
+        </thead>
+        <tbody>
+        </tbody>
+        <tfoot>
+          <tr>
+            <td class="predmet">Prosek</td>
+            <td id="prosek-bodovi">
+            </td>
+            <td id="prosek-ocena">
+            </td>
+          </tr>
+        </tfoot>
+      </table>
+      <form class="forma"> 
+      <label for="predmet">Unesi novi predmet:</label>
+      <input type="text" id="predmet">
+      <label for="bodovi">Unesi bodove:<label>
+      <input type="number" id="bodovi">
+      <label for="ocena">Unesi ocenu:</label>
+      <input type="number" id="ocena">
+      <button id="add" type="button">Dodaj</button>
+      </form>
+      <button id="calculate" type="button">Racunaj prosek</button>
+    </section>
+    <script src="./js/script.js"></script>
+  </body>
+</html>
