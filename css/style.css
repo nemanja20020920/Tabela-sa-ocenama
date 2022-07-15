@@ -91,3 +91,12 @@ input {
   background-color: transparent;
 }
 
+button {
+  border: 2px solid #0066cc;
+  margin: 5px;
+  padding: 10px;
+  font: 1rem 400 var(--roboto);
+  color: #0059b3;
+  background-color: transparent;
+  cursor: pointer;
+}
