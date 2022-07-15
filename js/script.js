@@ -29,8 +29,8 @@ const app = Vue.createApp({
         this.prosekOcena += parseInt(predmet.ocena);
         this.prosekBodova += parseInt(predmet.bodovi);
       }
-      this.prosekOcena /= this.predmeti.length;
-      this.prosekBodova /= this.predmeti.length;
+      this.prosekOcena = (this.prosekOcena / this.predmeti.length).toFixed(2);
+      this.prosekBodova = (this.prosekBodova / this.predmeti.length).toFixed(2);
     }
   },
 });
