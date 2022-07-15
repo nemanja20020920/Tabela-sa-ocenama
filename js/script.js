@@ -38,7 +38,6 @@ const app = Vue.createApp({
   },
 });
 
-//MONTIRAJ!!!
 app.mount("#tabela-sa-ocenama");
 
 // //iz dokumenta uzimamo dugmad calculate i add
