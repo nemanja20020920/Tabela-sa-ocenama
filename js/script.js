@@ -25,13 +25,16 @@ const app = Vue.createApp({
       }
     },
     racunajProsek() {
-      for(let predmet of this.predmeti) {
+      for (let predmet of this.predmeti) {
         this.prosekOcena += parseInt(predmet.ocena);
         this.prosekBodova += parseInt(predmet.bodovi);
       }
       this.prosekOcena = (this.prosekOcena / this.predmeti.length).toFixed(2);
       this.prosekBodova = (this.prosekBodova / this.predmeti.length).toFixed(2);
-    }
+    },
+    obrisiPredmet(predmet) {
+      this.predmeti.splice(predmet, 1);
+    },
   },
 });
 

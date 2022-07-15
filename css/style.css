@@ -31,6 +31,10 @@ table {
   margin-bottom: 2em;
 }
 
+tr {
+  cursor: pointer;
+}
+
 table,
 tr,
 td,
