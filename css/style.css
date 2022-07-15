@@ -31,7 +31,7 @@ table {
   margin-bottom: 2em;
 }
 
-tr {
+tr.predmet {
   cursor: pointer;
 }
 
